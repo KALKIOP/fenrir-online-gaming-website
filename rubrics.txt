@@ -1,0 +1,151 @@
+================================================================================
+                    FENRIR PROJECT - ONLINE GAMING WEBSITE
+                              EVALUATION RUBRIC
+================================================================================
+
+This document defines the grading matrix and performance rubrics for evaluating
+the Fenrir Online Gaming Website Product Requirement Document (PRD) and repository.
+
+TOTAL WEIGHT: 100%
+
+--------------------------------------------------------------------------------
+1. PRD COMPLETENESS (WEIGHT: 25%)
+--------------------------------------------------------------------------------
+Evaluates whether all crucial segments of the product requirements are present,
+realistic, and thoroughly detailed.
+
+*   EXEMPLARY (21 - 25 points):
+    *   Covers all requested sections: Project Introduction, Purpose, Goals, Target
+        Audience, Problem Statement, Business Objectives, and exhaustive User/Admin features.
+    *   Descriptions are clear, actionable, and do not contain placeholders.
+    *   Explicitly outlines monetization strategies (premium models, subscriptions).
+
+*   PROFICIENT (16 - 20 points):
+    *   Contains all major sections, but some goals or audience profiles lack detailed
+        demographic segmentation.
+    *   Features are listed but lack granular validation descriptions (e.g., misses mention of
+        HTTP-only cookie security or token management details).
+
+*   DEVELOPING (11 - 15 points):
+    *   Misses one major section (e.g., has no Problem Statement or Business Objectives).
+    *   Feature scope is high-level with very generic definitions (e.g., "Login system"
+        without specifying registration, OAuth, or security constraints).
+
+*   INADEQUATE (0 - 10 points):
+    *   Multiple sections missing.
+    *   Content is brief, copy-pasted, or relies heavily on placeholders.
+
+--------------------------------------------------------------------------------
+2. UI/UX & DESIGN SYSTEM QUALITY (WEIGHT: 20%)
+--------------------------------------------------------------------------------
+Evaluates the visual planning, style guide cohesiveness, logo branding proposals,
+and wireframe representations.
+
+*   EXEMPLARY (17 - 20 points):
+    *   Color palette defines specific hexadecimal codes matching a sleek gaming dark mode.
+    *   Typography specifies main interface and monospaced font pairings.
+    *   Wireframes outline visual layouts (headers, navigation cards, profiles) with hover
+        animations, state transitions, and responsive scale ratios defined.
+    *   Design choices feel extremely premium and professional.
+
+*   PROFICIENT (13 - 16 points):
+    *   Color palette is defined but lacks explicit hex/RGB values.
+    *   Typography and wireframes are described but lack details on responsive transitions,
+        hover effects, or UI scaling tokens.
+
+*   DEVELOPING (9 - 12 points):
+    *   Design system only lists colors and fonts without wireframe structure or logo ideas.
+    *   Theme matches generic browser styles instead of a dedicated gaming aesthetic.
+
+*   INADEQUATE (0 - 8 points):
+    *   No design system present. Design details are omitted or completely generic.
+
+--------------------------------------------------------------------------------
+3. DOCUMENTATION & INSTRUCTION CLARITY (WEIGHT: 20%)
+--------------------------------------------------------------------------------
+Evaluates how well the setup, development, and deployment guidelines are written.
+
+*   EXEMPLARY (17 - 20 points):
+    *   Provides a step-by-step setup guide for both frontend and backend systems.
+    *   Prerequisites (Node, Postgres, Redis) are clearly listed with configuration keys.
+    *   Environment variables are documented in detail with explanation of keys.
+    *   Commands are copy-pasteable and free of execution errors.
+
+*   PROFICIENT (13 - 16 points):
+    *   Setup instructions exist but omit one or two configurations (e.g., missing redis settings).
+    *   Requires slight troubleshooting or prior knowledge of the stack to boot up successfully.
+
+*   DEVELOPING (9 - 12 points):
+    *   Vague instructions. Missing setup details for either client or server.
+    *   Lacks explanation of configuration files or environment setups.
+
+*   INADEQUATE (0 - 8 points):
+    *   Documentation is missing or unreadable. Setup instructions fail to work.
+
+--------------------------------------------------------------------------------
+4. TECHNICAL PLANNING & ARCHITECTURE (WEIGHT: 15%)
+--------------------------------------------------------------------------------
+Evaluates the technical architecture, data model structures, and API endpoint designs.
+
+*   EXEMPLARY (13 - 15 points):
+    *   Includes a comprehensive database schema detailing primary keys, data types,
+        constraints, and foreign key relations.
+    *   API endpoints are structured logically (RESTful), specifying request payloads, headers,
+        and response statuses.
+    *   Correctly integrates WebSockets for real-time multiplayer coordination.
+
+*   PROFICIENT (10 - 12 points):
+    *   Database schema covers main tables but misses key relationships or indexing metadata.
+    *   API routes are listed but lack specific status codes, headers, or request payloads.
+
+*   DEVELOPING (7 - 9 points):
+    *   Schema lacks proper structures (e.g., no data types or keys specified).
+    *   API architecture is poorly designed or highly inconsistent.
+
+*   INADEQUATE (0 - 6 points):
+    *   No technical planning, schema, or API lists are included.
+
+--------------------------------------------------------------------------------
+5. NAMING & FILE STRUCTURE (WEIGHT: 10%)
+--------------------------------------------------------------------------------
+Evaluates adherence to naming conventions, folder structures, and repository neatness.
+
+*   EXEMPLARY (9 - 10 points):
+    *   Folder name matches the exact target format: "firstname_lastname" (himanshu_kumar).
+    *   All files (overview, scope_of_work, assets, reference_image, instructions, rubrics)
+        are placed in the root directory under correct names.
+    *   Code structures represent clean, standard Node/React architectures.
+
+*   PROFICIENT (7 - 8 points):
+    *   Files are named correctly, but directory structure has minor deviations.
+    *   Naming convention is inconsistent across database tables or API route files.
+
+*   DEVELOPING (5 - 6 points):
+    *   Folder name uses incorrect casings or separators.
+    *   Files are scattered or missing from the main directory.
+
+*   INADEQUATE (0 - 4 points):
+    *   Incorrect directory setup, missing core files, completely messy workspace.
+
+--------------------------------------------------------------------------------
+6. SUBMISSION ACCURACY (WEIGHT: 10%)
+--------------------------------------------------------------------------------
+Evaluates the final readiness, formatting, and submission rules adherence.
+
+*   EXEMPLARY (9 - 10 points):
+    *   Final delivery includes all requested components.
+    *   PDF asset renders cleanly without text cutoff or overlapping elements.
+    *   Files are formatted nicely for read/write checks and are ready for git push.
+
+*   PROFICIENT (7 - 8 points):
+    *   All components submitted, but PDF has layout issues (e.g., text overflow or formatting bugs).
+    *   Minor formatting inconsistencies in text files.
+
+*   DEVELOPING (5 - 6 points):
+    *   Missing elements in files, or files require manual fixing to render.
+    *   Some deliverables are not placed in the main directory.
+
+*   INADEQUATE (0 - 4 points):
+    *   Incomplete files, corrupt assets, or failed build validation.
+
+================================================================================

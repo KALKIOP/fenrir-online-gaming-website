@@ -1,0 +1,113 @@
+================================================================================
+                    FENRIR PROJECT - ONLINE GAMING WEBSITE
+                              SCOPE OF WORK
+================================================================================
+
+1. MODULES AND FEATURE LIST
+---------------------------
+
+A. USER-SIDE SYSTEM
+
+1. SIGNUP / LOGIN (AUTHENTICATION & AUTHORIZATION)
+   * User Registration: Traditional registration using email, username, and password.
+   * Social Authentication: OAuth 2.0 integration for Google and Discord accounts.
+   * Session Management: JWT (JSON Web Tokens) stored securely in HTTP-only cookies.
+   * Security Controls: Strong password validation, account activation emails,
+     password reset flow, and optional Multi-Factor Authentication (MFA).
+
+2. USER PROFILE MANAGEMENT
+   * Identity Dashboard: Unique username, custom profile picture upload (with size/type
+     validation), customizable bio, and custom country/region flag.
+   * Gamer Level & XP: Visual level badge indicating gaming experience, updated
+     dynamically based on playtime, matches won, and completed tournaments.
+   * Career Stats: Comprehensive metrics showing total matches played, overall win/loss
+     ratio, top-played games, tournament wins, and achievements unlocked.
+   * Match History: Log of last 20 played matches detailing game played, date, score,
+     opponents, and ranking change (MMR / Coins).
+
+3. GAME CATEGORIES & DISCOVERY
+   * Intuitive Navigation: Dynamic browsing of games categorized by genre (e.g., Casual,
+     Strategy, Arcade, Action, Sports, Puzzle).
+   * Search & Filtering: Real-time search input, sorting by popularity, date added,
+     rating, and filter toggle for solo vs. multiplayer games.
+   * Game Page: Dedicated game hub displaying game description, rules, controls,
+     top-rated players for that specific game, and a launch button.
+
+4. MULTIPLAYER ROOMS & MATCHMAKING
+   * Custom Lobby List: Public room browser displaying room name, active player count,
+     current host, and game type.
+   * Lobby Creation: Interface for hosting private or public rooms. Private rooms
+     require a joining password and support invite links.
+   * Matchmaking Queue: Automatic, skill-based MMR (Matchmaking Rating) matchmaking system
+     connecting players of similar skill levels into a session.
+   * In-Lobby Interaction: Live chat interface for players in the lobby, player list with
+     ready check, kick options for the host, and game settings panel.
+
+5. LEADERBOARD SYSTEM
+   * Ranking Categories: Daily, Weekly, and All-Time global rankings.
+   * Segmentation: Genre-specific and game-specific leaderboards.
+   * User Search: Direct search field to find a specific player's position, highlighting
+     the logged-in user's rank.
+   * Reward Allocation: Scheduled cron-jobs distributing bonus coins to the top 10 players
+     at the end of each weekly leaderboard cycle.
+
+6. WALLET & REWARDS
+   * Virtual Wallet: Displays user's coin balance and premium currency. Includes an
+     immutable ledger of all transaction histories (earned, spent, purchased).
+   * Reward Mechanics: Daily log-in streak rewards, level-up bonuses, and coin payouts
+     for winning matches or tournaments.
+   * Premium Store: Interface to spend coins on avatar borders, custom profile banners,
+     in-game chat colors, and unique emojis.
+   * Premium Subscription: Checkout gateway for purchasing "Fenrir Pro" membership for
+     ad-free gameplay, premium tournaments, and double XP.
+
+7. TOURNAMENT SECTION
+   * Registration Module: Visual list of open, active, and completed tournaments. Supports
+     solo registration or pre-made team registrations.
+   * Tournament Bracket Visualizer: Fully interactive, real-time updated tournament
+     brackets (Single-elimination, double-elimination, round-robin).
+   * Match Coordination: Match-detail page where opponents are matched, providing a private
+     chat, room details, and automated score submission.
+   * Rules & Prizes: Detailed overview page for each tournament containing the schedule,
+     rules, prize distribution breakdown, and moderator contacts.
+
+
+B. ADMIN-SIDE SYSTEM
+
+1. USER MANAGEMENT
+   * Player Directory: Searchable tabular directory of all registered users with filters
+     by registration date, user role, and status (active/banned).
+   * Role Adjustment: Admin actions to elevate users to Moderator, Administrator, or demote
+     to standard User status.
+   * Account Details Review: Profile inspector showing IP logs, connected OAuth providers,
+     linked transactions, and notes from other moderators.
+
+2. BAN AND REPORT SYSTEM
+   * Report Queue: Ticket management system gathering reports filed by users, showing reporter,
+     reported user, category (harassment, cheating, inappropriate name), and evidence.
+   * Ban Panel: Actions to issue temporary or permanent account/IP bans, chat mutes, and
+     automated email notifications of the infraction details.
+   * Appeal Processing: Ticket system allowing banned users to appeal decisions, with a log
+     of final admin verdicts.
+
+3. GAME MANAGEMENT
+   * Game Console: Administration panel to add new games, specify executable assets/WebGL links,
+     set game icons, and define metadata.
+   * Config Control: Adjust settings like server configuration, default matchmaking rules,
+     maximum room sizes, and active coin multipliers (e.g., Double XP Weekend).
+
+4. ANALYTICS DASHBOARD
+   * Traffic Metrics: Live graphs charting Daily Active Users (DAU), Monthly Active Users (MAU),
+     concurrent online players, and average session duration.
+   * Financial Insights: Revenue tracking showing subscription sales, premium token sales,
+     conversion rate, and historical revenue tables.
+   * System Health: Server load indicators, active WebSocket connections count, database query
+     latencies, and application error logs.
+
+5. PAYMENT MANAGEMENT
+   * Transaction Ledger: Comprehensive, search-filtered database of all fiat payments,
+     credit card logs, and payment processor IDs (Stripe/PayPal).
+   * Refund Engine: Admin interface to issue subscription cancellations, partial or full refunds,
+     and auto-adjust premium status.
+
+================================================================================
